@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>𝐎𝐗𝐘ɢᴇɴ| Portfolio</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" href="💀">
+
+  <!-- ✅ Font Awesome 6.5 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-kLUeNSFOM4ShsJY8ElHTCR8C62+X0KyzE9nD2L/ScGpU0fhJbWgqFCU3ZDlqS9z5A7h7zNV3TKD9eFmrmkh97A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ✅ Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h2 class="logo">𝐎𝐗𝐘ɢᴇɴ 🎈</h2>
+      <nav>
+        <ul class="nav-links">
+          <li style="color: rgba(78, 190, 241, 0.664);"><a href="portfolio.html"><u>Home</u></a></li>
+          <li><a href="#"><u>Services</u></a></li>
+          <li><a href="#"><u>Skills</u></a></li>
+          <li><a href="#"><u>Education</u></a></li>
+          <li><a href="#"><u>Experience</u></a></li>
+          <li><a href="#"><u>Contact</u></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="content">
+      <div class="image-container">
+        <img src="photo/Itadori Yuuji Manga Pfp Dark Yuji Jujutsu Batman Artwork Pictures.jfif" alt="Alex Image" />
+      </div>
+      <div class="text">
+        <h1>Hoi, It's <span class="highlight">𝐎𝐗𝐘ɢᴇɴ 🎈</span></h1>
+        <i></i><h2>I'm a <span class="typing-text"></span></h2>
+        <i><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio enim eaque obcaecati voluptas temporibus, sunt commodi rem ipsam explicabo debitis distinctio suscipit eveniet neque asperiores ea.</p></i>
+
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <button class="hire-btn"><i>Hire me</i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Typing Animation Script -->
+  <script>
+    const roles = ["Script Writer..", "Web Developer..", "Web Designer..", "UI/UX Enthusiast.."];
+    const typingText = document.querySelector(".typing-text");
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+      const currentRole = roles[roleIndex];
+      if (isDeleting) {
+        typingText.textContent = currentRole.substring(0, charIndex--);
+      } else {
+        typingText.textContent = currentRole.substring(0, charIndex++);
+      }
+
+      if (!isDeleting && charIndex === currentRole.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, 1000);
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        setTimeout(typeEffect, 300);
+      } else {
+        setTimeout(typeEffect, isDeleting ? 50 : 100);
+      }
+    }
+
+    typeEffect();
+  </script>
+
+  <footer>
+    
+  </footer>
+  
+
+</body>
+</html>

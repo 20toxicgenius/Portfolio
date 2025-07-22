@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  color: rgba(78, 190, 241, 0.664);
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: rgba(78, 190, 241, 0.664);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 40px;
+  background: solid #0f0f0f 60%
+  min-height=calc(100vh - 100px);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: radial-gradient(circle at center,rgba(78, 190, 241, 0.664) 70%, transparent 100%);
+  box-shadow: 0 0 40px rgba(78, 190, 241, 0.664);
+  flex-shrink: 0;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text {
+  max-width: 600px;
+}
+
+.text h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color:rgba(78, 190, 241, 0.664);
+}
+
+.text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.typing-text {
+  color: rgba(78, 190, 241, 0.664);
+  font-weight: bold;
+  border-right: 2px solid whitesmoke;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.text p {
+  margin-bottom: 30px;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.socials {
+  margin-bottom: 20px;
+}
+
+.socials a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color:rgba(78, 190, 241, 0.664);
+}
+
+.hire-btn {
+  padding: 12px 28px;
+  background-color: transparent;
+  border: 1px solid rgba(78, 190, 241, 0.664);
+  border-radius: 25px;
+  font-weight: bold;
+  color: rgba(78, 190, 241, 0.664);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hire-btn:hover {
+  background-color: rgba(78, 190, 241, 0.664);
+  color: white;
+  
+}
